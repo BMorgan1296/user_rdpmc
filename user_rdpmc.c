@@ -25,14 +25,14 @@ set_pce(void *arg)
     int to_val = (arg != 0);
     u_int32_t cr4_val;
 
-    cr4_val = read_cr4();
+    cr4_val = __read_cr4();
     if (to_val) {
         cr4_val |= X86_CR4_PCE;
     } else {
         cr4_val &= ~X86_CR4_PCE;
     }
 
-    write_cr4(cr4_val);
+    __write_cr4(cr4_val);
 }
 
 static int __init
