@@ -7,3 +7,5 @@ user_rdpmc.ko
 user_rdpmc.mod.c
 user_rdpmc.mod.o
 user_rdpmc.o
+*.cmd
+*.mod
